@@ -20,7 +20,7 @@ jobs:
         node-version: '18.18.0'  # Adjust the Node.js version as per your project requirements
 
     - name: Install Lerna
-      run: npm install
+      run: npm ci
 
     - name: Build frontend
       run: |
