@@ -10,6 +10,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "start": "concurrently \"lerna run start --scope frontend\" \"lerna run start --scope backend\""
+    "start": "concurrently \"lerna run start --scope frontend\" \"lerna run start --scope backend\"",
+    "delete": "rm -r node_modules && cd packages/backend && rm -r node_modules && cd ../frontend && rm -r node_modules"
   }
 }
