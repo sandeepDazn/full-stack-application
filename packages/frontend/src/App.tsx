@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Customer Portal</h1>
+      <h1>production build</h1>
       <ul>
         {customers.map(customer => (
           <li key={customer.id}>{customer.name}</li>

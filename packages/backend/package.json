@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "tsc",
-    "start": "npm run build && node dist/index.js"
+    "build": "tsc",
+    "start": "node src/index.ts",
+    "build-start": "npm run build && node dist/index.js"
   },
   "keywords": [],
   "author": "",
