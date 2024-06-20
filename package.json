@@ -11,6 +11,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "concurrently \"lerna run start --scope frontend\" \"lerna run start --scope backend\"",
-    "delete": "rm -r node_modules && cd packages/backend && rm -r node_modules && cd ../frontend && rm -r node_modules"
+    "delete": "rm -rf node_modules && cd packages/backend && rm -rf node_modules && cd ../frontend && rm -rf node_modules"
   }
 }
