@@ -10,9 +10,9 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "cd packages/backend && npm run build && cd ../frontend && npm run build",
+    "build": "cd packages/backend && npm run build && cd ../frontend && npm run build && cd ../dynamobackend && npm run build",
     "start": "concurrently \"lerna run start --scope frontend\" \"lerna run start --scope backend\"",
-    "build-start": "concurrently \"lerna run build-start --scope frontend\" \"lerna run build-start --scope backend\"",
-    "delete": "rm -rf node_modules && cd packages/backend && rm -rf node_modules dist && cd ../frontend && rm -rf node_modules build"
+    "build-start": "concurrently \"lerna run build-start --scope frontend\" \"lerna run build-start --scope backend\" \"lerna run build-start --scope dynamobackend\"",
+    "delete": "rm -rf node_modules && cd packages/backend && rm -rf node_modules dist && cd ../frontend && rm -rf node_modules build && cd ../dynamobackend && rm -rf node_modules dist"
   }
 }
